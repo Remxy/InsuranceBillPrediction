@@ -36,6 +36,6 @@ deployment_07062020 = load_model('deployment_07062020')
 deployment_07062020
 
 import requests
-url = 'https://predictbill-insurance.herokuapp.com/predict_api'
+url = 'https://billprediction-insurance.herokuapp.com/predict_api'
 pred = requests.post(url,json={'age':55, 'sex':'male', 'bmi':59, 'children':1, 'smoker':'male', 'region':'northwest'})
 print(pred.json())
